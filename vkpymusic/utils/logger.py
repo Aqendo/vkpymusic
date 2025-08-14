@@ -56,8 +56,8 @@ def _get_stream_handler() -> logging.StreamHandler:
 
 def create_logger(
         name: str,
-        console: bool = True,
-        file: bool = True
+        console: bool = False,
+        file: bool = False
     ) -> logging.Logger:
     """
     Returns a logger instance with configured handlers.
